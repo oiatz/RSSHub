@@ -661,11 +661,11 @@ Supported sub-sites:
 
 ### 公司公告
 
-<Route author="LogicJake" example="/cninfo/stock_announcement/000410" path="/cninfo/stock_announcement/:code" :paramsDesc="['股票代码']"/>
+<Route author="LogicJake" example="/cninfo/stock_announcement/000410/gssz0000410" path="/cninfo/stock_announcement/:code/:orgId" :paramsDesc="['股票代码', '对应 id，可在 URL 找到']"/>
 
 ### 公司公告 - A 股港股
 
-<Route author="LogicJake hillerliao" example="/cninfo/announcement/002024/gqjl" path="/cninfo/announcement/:code/:category?" :paramsDesc="['股票代码, 若不指定公司则填 all', '公告分类，对A股有效如 gqjl 表示 股权激励 分类']">
+<Route author="LogicJake hillerliao" example="/cninfo/announcement/002024/gssz0000410/gqjl" path="/cninfo/announcement/:code/:orgId/:category?" :paramsDesc="['股票代码, 若不指定公司则填 all', '对应 id，可在 URL 找到', '公告分类，对A股有效如 gqjl 表示 股权激励 分类']">
 
 | 年报 | 半年报 | 一季报 | 三季报 | 业绩预告 | 权益分派 | 董事会 | 监事会 | 股东大会 | 日常经营 | 公司治理 | 中介报告 | 首发 | 增发 | 股权激励 | 配股 | 解禁 | 债券 | 其他融资 | 股权变动 | 补充更正 | 澄清致歉 | 风险提示 | 特别处理和退市 |
 | ---- | ------ | ------ | ------ | -------- | -------- | ------ | ------ | -------- | -------- | -------- | -------- | ---- | ---- | -------- | ---- | ---- | ---- | -------- | -------- | -------- | -------- | -------- | -------------- |
@@ -675,7 +675,7 @@ Supported sub-sites:
 
 ### 基金公告
 
-<Route author="hillerliao" example="/cninfo/fund_announcement/159977/基金合同" path="/cninfo/fund_announcement/:code/:searchkey" :paramsDesc="['基金代码, 若不指定则填 all', '过滤词，若不指定则填all']"/>
+<Route author="hillerliao" example="/cninfo/fund_announcement/009637/jjjl0000060/基金合同" path="/cninfo/fund_announcement/:code/:orgId/:searchkey" :paramsDesc="['基金代码, 若不指定则填 all', '对应 id，可在 URL 找到', '过滤词，若不指定则填all']"/>
 
 ## 决胜网
 
