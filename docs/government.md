@@ -89,6 +89,12 @@ pageClass: routes
 
 <Route author="sgqy" example="/go.jp/mofa" path="/go.jp/mofa"/>
 
+## 世界贸易组织
+
+### 争端解决新闻
+
+<Route author="nczitzk" example="/wto/dispute-settlement" path="/wto/dispute-settlement/:year?" :paramsDesc="['年份，默认为当前年份']"/>
+
 ## 苏州市人民政府
 
 ### 政府新闻
@@ -132,6 +138,16 @@ pageClass: routes
 ### 最新通知
 
 <Route author="Yoge-Code" example="/gov/cnca/zxtz" path="/gov/cnca/zxtz"/>
+
+## 中国人大网
+
+<Route author="233yeee" example="/npc/c183" path="/npc/:caty" :paramsDesc="['分类名，支持形如`http://www.npc.gov.cn/npc/*/list.shtml`的网站，传入 npc 之后的参数']">
+
+| 立法 | 监督 | 代表 | 理论 | 权威发布 | 滚动新闻 |
+| ---- | ---- | ---- | ---- | -------- | -------- |
+| c183 | c184 | c185 | c189 | c12435   | c10134   |
+
+</Route>
 
 ## 中国信息通信研究院
 
@@ -377,6 +393,12 @@ pageClass: routes
 | 釜山 | `/embassy/kr/busan`   |
 | 济州 | `/embassy/kr/jeju`    |
 | 光州 | `/embassy/kr/gwangju` |
+
+* * *
+
+#### 马来西亚 `MY`
+
+-   大使馆: `/embassy/my`
 
 * * *
 

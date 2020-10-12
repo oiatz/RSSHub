@@ -477,6 +477,18 @@ Supported sub-sites:
 
 <Route author="hillerliao" example="/8btc/news/flash" path="/8btc/news/flash"/>
 
+## 八阕
+
+### 广角新闻
+
+<Route author="nczitzk" example="/popyard" path="/popyard/:caty?" :paramsDesc="['分类, 默认为全景']">
+
+| 全景 | 中国 | 国际 | 科教 | 军事 | 体育 | 娱乐 | 艺术 | 文史 | 观点 | 生活 | 产经 | 其它 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   | 11   | 12   |
+
+</Route>
+
 ## 百度知道日报
 
 ### 精选
@@ -700,6 +712,12 @@ area 分区选项
 | technical-course | quality-software | network-resource | fulinian | chuangye | authentic-course |
 
 </Route>
+
+## 高科技行业门户
+
+### 新闻
+
+<Route author="luyuhuang" example="/ofweek/news" path="/ofweek/news"/>
 
 ## 谷歌新闻
 
@@ -949,6 +967,30 @@ area 分区选项
 ### 节目
 
 <Route author="xyqfer" example="/laosiji/hotshow/128" path="/laosiji/hotshow/:id" :paramsDesc="['节目 id']"/>
+
+## 妈咪帮
+
+<Route author="nczitzk" example="/mamibuy" path="/mamibuy/:caty?/:age?/:sort?" :paramsDesc="['分类，见下表，默认为全分類', '岁数，见下表，默认为不限', '排序，见下表，默认为最新']">
+
+分类
+
+| 全分類 | 小兒醫護 | 幼兒教育 | 育兒成長 | 母乳餵哺 | 寶寶飲食 | 用品交流 | 女人聊天 | 居家生活 | 親子旅遊 / 好去處 | 媽咪扮靚 | 生活閒談 | 懷孕交流 |
+| ------ | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | ----------------- | -------- | -------- | -------- |
+| 0      | 1        | 2        | 3        | 4        | 5        | 6        | 7        | 8        | 9                 | 10       | 11       | 12       |
+
+岁数
+
+| 不限 | 懷孕中 | 生產後 | 0~1 歲 | 1~3 歲 | 3~6 歲 | 6 歲以上 |
+| ---- | ------ | ------ | ------ | ------ | ------ | -------- |
+| 0    | 1      | 2      | 3      | 4      | 5      | 6        |
+
+排序
+
+| 最新 | 推薦 | 熱門 |
+| ---- | ---- | ---- |
+| 1    | 2    | 3    |
+
+</Route>
 
 ## 梅花网
 
